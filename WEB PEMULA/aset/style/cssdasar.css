@@ -1,0 +1,34 @@
+.body {
+    background-color: rgb(216, 176, 176) ;
+    font-family: cambria;
+}
+
+.heading {
+    padding: 20px;
+    color: brown;
+    background-color: aqua;
+    font-family: Tahoma;
+    font-weight: bold;
+  text-shadow: 4px 4px 3px #77f;
+}
+
+
+
+.heading2 {
+    color: rgb(17, 16, 82);
+}
+
+.footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+}
+
+.ul {
+    color: red;
+}
+
+a[href^='#'] {
+    background-color: gold;
+    color : red;
+  }

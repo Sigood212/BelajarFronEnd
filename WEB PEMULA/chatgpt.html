@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAT GPT</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        /* Styling untuk kolom */
+        .kolom-a {
+            background-color: lightblue;
+        }
+        .kolom-b {
+            background-color: lightgreen;
+        }
+        .kolom-c {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <colgroup>
+            <col class="kolom-a">  <!-- Kolom pertama dengan background biru -->
+            <col class="kolom-b" >  <!-- Kolom kedua dan ketiga dengan background hijau -->
+            <col class="kolom-c"  >
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Umur</th>
+                <th>Pekerjaan</th>
+                <th>Agama</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>25</td>
+                <td>Programmer</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>30</td>
+                <td>Desainer</td>
+                <td>Konghucu</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>30</td>
+                <td>Desainer</td>
+                <td>barat baratan</td>
+            </tr>
+            <tr></tr>
+                <td>iis</td>
+                <td>30</td>
+                <td>Desainer</td>
+                <td>islam</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Formulir Pendaftaran memasukan atribut autocomplete</h2>
+    <p>
+        jadi autocomplete untuk menyimpan history imputan
+    </p>
+    <form action="/submit" method="POST">
+        <!-- Nama Lengkap -->
+        <label for="name">Nama Lengkap:</label>
+        <input type="text" id="name" name="name" autocomplete="name" placeholder="Masukkan nama lengkap" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" autocomplete="email" placeholder="Masukkan email" maxlength="5" required><br><br>
+
+        <!-- Alamat -->
+        <label for="address">Alamat:</label>
+        <input type="text" id="address" name="address" autocomplete="street-address" placeholder="Masukkan alamat" required><br><br>
+
+        <!-- Kota -->
+        <label for="city">Kota:</label>
+        <input type="text" id="city" name="city" autocomplete="address-level2" placeholder="Masukkan kota" required><br><br>
+
+        <!-- Kode Pos -->
+        <label for="postal-code">Kode Pos:</label>
+        <input type="text" id="postal-code" name="postal-code" autocomplete="postal-code" placeholder="Masukkan kode pos" required><br><br>
+
+        <!-- Nomor Telepon -->
+        <label for="phone">Nomor Telepon:</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="Masukkan nomor telepon" required><br><br>
+
+        <!-- Tombol Kirim -->
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>
